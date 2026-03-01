@@ -557,7 +557,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .hobbies__card {
-  background: #fff;
+  background: #e5e5e6da;
   border-radius: 8px;
   padding: 2.5rem 2rem;
   width: 28rem;
