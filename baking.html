@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baking – Johan Kornet</title>
+  <link rel="shortcut icon" type="image/png" href="./images/K_IMAGE.png" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .hobby-nav {
+      background: #000;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .hobby-nav .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hobby-nav__back {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .hobby-nav__back:hover {
+      color: #6c63ff;
+    }
+
+    .hobby-nav__links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .hobby-nav__links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: color 0.2s;
+    }
+
+    .hobby-nav__links a:hover {
+      color: #6c63ff;
+    }
+
+    .hobby-hero {
+      background: #000;
+      color: #fff;
+      padding: 8rem 0 5rem;
+      text-align: center;
+    }
+
+    .hobby-hero h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-hero p {
+      font-size: 1.8rem;
+      color: #aaa;
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+      gap: 3rem;
+      padding: 6rem 0;
+    }
+
+    .showcase-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .showcase-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    .showcase-card__photo {
+      width: 100%;
+      height: 24rem;
+      object-fit: cover;
+      display: block;
+      background: #f0f0f0;
+    }
+
+    .showcase-card__body {
+      padding: 2rem;
+    }
+
+    .showcase-card__body h3 {
+      font-size: 2rem;
+      margin-bottom: 0.6rem;
+      color: #111;
+    }
+
+    .showcase-card__body p {
+      font-size: 1.4rem;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .showcase-card__tag {
+      display: inline-block;
+      background: #f0eeff;
+      color: #6c63ff;
+      border-radius: 20px;
+      padding: 0.3rem 1rem;
+      font-size: 1.2rem;
+      margin: 0.2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav class="hobby-nav">
+    <div class="row">
+      <a href="index.html" class="hobby-nav__back">← Back to Portfolio</a>
+      <ul class="hobby-nav__links">
+        <li><a href="baking.html">Baking</a></li>
+        <li><a href="lifting.html">Lifting</a></li>
+        <li><a href="scifi.html">Sci-Fi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hobby-hero">
+    <div class="row">
+      <h1>Baking</h1>
+      <p>Yummy Yummy In My Tummy</p>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <main>
+    <div class="row">
+      <div class="showcase-grid">
+
+        <!-- Card 1 — add your photo to ./images/ and update the src -->
+        <div class="showcase-card">
+          <img src="./images/bread.jpg" class="showcase-card__photo" alt="Cheese Bread" />
+          <div class="showcase-card__body">
+            <h3>Cheese Bread</h3>
+            <p>Rustic loaf of white bread stuffed with cheddar cheese. Goes wonderfully with my mother's minestrone
+              soup.</p>
+            <span class="showcase-card__tag">Bread</span>
+            <span class="showcase-card__tag">Favorite</span>
+            <span class="showcase-card__tag">Savory</span>
+
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="showcase-card">
+          <img src="./images/cinnamaroll.jpg" class="showcase-card__photo" alt="Bake 2" />
+          <div class="showcase-card__body">
+            <h3>Cinnamon Rolls</h3>
+            <p>Made with a friend for a NUEN dessert cook-off. <br>Did not win.<br>Still tasted good!</p>
+            <span class="showcase-card__tag">Bread</span>
+            <span class="showcase-card__tag">Sweet</span>
+
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="showcase-card">
+          <img src="./images/cookie.jpg" class="showcase-card__photo" alt="Bake 3" />
+          <div class="showcase-card__body">
+            <h3>Chocolate Chip Cookie</h3>
+            <p>Chocolate Chip Cookies. The basics are the basics for a reason.<br>My secret ingredient is coffee powder
+              -> it adds a layer of complexity to the chocolate flavor.</p>
+            <span class="showcase-card__tag">Cookie</span>
+            <span class="showcase-card__tag">Sweet</span>
+
+          </div>
+        </div>
+
+        <!-- Copy and paste a card block above to add more -->
+
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/KrakenStorageModule" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/johan-kornet/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+              alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

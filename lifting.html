@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifting – Johan Kornet</title>
+  <link rel="shortcut icon" type="image/png" href="./images/K_IMAGE.png" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .hobby-nav {
+      background: #000;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .hobby-nav .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hobby-nav__back {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .hobby-nav__back:hover {
+      color: #6c63ff;
+    }
+
+    .hobby-nav__links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .hobby-nav__links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: color 0.2s;
+    }
+
+    .hobby-nav__links a:hover {
+      color: #6c63ff;
+    }
+
+    .hobby-hero {
+      background: #000;
+      color: #fff;
+      padding: 8rem 0 5rem;
+      text-align: center;
+    }
+
+    .hobby-hero h1 {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-hero p {
+      font-size: 1.8rem;
+      color: #aaa;
+    }
+
+    .pr-section {
+      padding: 6rem 0;
+    }
+
+    .pr-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 1rem;
+    }
+
+    .pr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+      gap: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    .pr-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2.5rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-top: 4px solid #6c63ff;
+    }
+
+    .pr-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .pr-card__lift {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin-bottom: 0.5rem;
+    }
+
+    .pr-card__weight {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #000;
+      line-height: 1;
+    }
+
+    .pr-card__unit {
+      font-size: 1.6rem;
+      color: #666;
+    }
+
+    .pr-card__date {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-top: 0.8rem;
+    }
+
+    .pr-card__note {
+      font-size: 1.3rem;
+      color: #666;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
+    .goal-card {
+      background: #f0eeff;
+      border-radius: 8px;
+      padding: 2rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .goal-card__lift {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    .goal-card__target {
+      font-size: 1.6rem;
+      color: #6c63ff;
+      font-weight: 700;
+    }
+
+    .goal-card__progress-bar {
+      width: 100%;
+      background: #ddd;
+      border-radius: 99px;
+      height: 8px;
+      margin-top: 0.8rem;
+      overflow: hidden;
+    }
+
+    .goal-card__progress-fill {
+      background: #6c63ff;
+      height: 100%;
+      border-radius: 99px;
+      transition: width 1s ease;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav class="hobby-nav">
+    <div class="row">
+      <a href="index.html" class="hobby-nav__back">← Back to Portfolio</a>
+      <ul class="hobby-nav__links">
+        <li><a href="baking.html">Baking</a></li>
+        <li><a href="lifting.html">Lifting</a></li>
+        <li><a href="scifi.html">Sci-Fi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hobby-hero">
+    <div class="row">
+      <h1>Lifting</h1>
+      <p>“As long as we’re living and breathing, there’s more we can do. We just have to be strong enough.” <br>-James
+        Holden, The Expanse</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="row">
+
+      <!-- Big 3 PRs -->
+      <section class="pr-section">
+        <h2>Current Stats:</h2>
+        <div class="pr-grid">
+          <div class="pr-card">
+            <div class="pr-card__lift">Squat</div>
+            <div class="pr-card__weight">200 lbs<span class="pr-card__unit">lbs</span></div>
+            <div class="pr-card__date">1/20/26</div>
+            <!-- <div class="pr-card__note">Add your PR here</div> -->
+          </div>
+          <div class="pr-card">
+            <div class="pr-card__lift">Bench Press</div>
+            <div class="pr-card__weight">185 lbs <span class="pr-card__unit">lbs</span></div>
+            <div class="pr-card__date">2/1/26</div>
+            <!-- <div class="pr-card__note">Add your PR here</div> -->
+          </div>
+          <div class="pr-card">
+            <div class="pr-card__lift">Deadlift</div>
+            <div class="pr-card__weight">225 lbs <span class="pr-card__unit">lbs</span></div>
+            <div class="pr-card__date">3/1/26</div>
+            <!-- <div class="pr-card__note">Add your PR here</div> -->
+          </div>
+        </div>
+        <div class="pr-card">
+          <div class="pr-card__lift">Weight</div>
+          <div class="pr-card__weight">135 lbs <span class="pr-card__unit">lbs</span></div>
+          <div class="pr-card__date">3/1/26</div>
+          <!-- <div class="pr-card__note">Add your PR here</div> -->
+        </div>
+    </div>
+
+    <!-- Goals -->
+    <h2>Current Goals</h2>
+    <div>
+      <div class="goal-card">
+        <div>
+          <div class="goal-card__lift">Squat</div>
+          <div>
+          </div>
+        </div>
+        <div class="goal-card__target">Goal: 225 lbs</div>
+      </div>
+      <div class="goal-card">
+        <div style="flex:1; margin-right: 2rem;">
+          <div class="goal-card__lift">Bench Press</div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="goal-card__target">Goal: 225 lbs</div>
+      </div>
+      <div class="goal-card">
+        <div style="flex:1; margin-right: 2rem;">
+          <div class="goal-card__lift">Deadlift</div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="goal-card__target">Goal: 250 lbs</div>
+      </div>
+    </div>
+    <div class="goal-card">
+      <div style="flex:1; margin-right: 2rem;">
+        <div class="goal-card__lift">Weight</div>
+        <div>
+          <div></div>
+        </div>
+      </div>
+      <div class="goal-card__target">Goal: 120 lbs</div>
+    </div>
+    </div>
+    </section>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/KrakenStorageModule" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/johan-kornet/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+              alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>

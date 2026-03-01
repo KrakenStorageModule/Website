@@ -405,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+        url('./images/pretty_stars.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -504,33 +504,94 @@ body:not(.user-is-tabbing) a:focus {
         height: 4rem;
     }
 }
+.Experiences__code {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
 
+.Experiences__image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- hobbiess ----- */
 /* --------------------------------------- */
 
-.client__logos {
+.hobbies__logos {
     display: flex;
     justify-content: space-between;
     filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
-.client__logo {
+.hobbies__logo {
     height: 6.5rem;
     max-width: 18rem;
 }
+.hobbies__icon {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
 
 @media(max-width: 1240px) {
-    .client__logos {
+    .hobbies__logos {
         overflow-x: scroll;
         padding: var(--gutter-normal);
     }
 
-    .client__logo:not(:last-of-type) {
+    .hobbies__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
     }
 }
+.hobbies__cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
 
+.hobbies__card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  width: 28rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.hobbies__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.hobbies__icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.hobbies__card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hobbies__card p {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+.hobbies__card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4f4949;
+}
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
@@ -610,4 +671,36 @@ body:not(.user-is-tabbing) a:focus {
     .footer {
         padding: var(--gutter-medium) 0;
     } 
+}
+.recipe-card__emoji img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Experiences__image-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.Experiences__image-row .Experiences__image {
+  width: 50%;
+  object-fit: cover;
+}
+.goal-card__lift { 
+  font-size: 1.6rem; 
+  font-weight: 600; 
+  color: #111;
+}
+.review-card__emoji {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.review-card__title { 
+  font-size: 2rem; 
+  font-weight: 700; 
+  margin-bottom: 0.4rem; 
+  color: #494848;
 }
