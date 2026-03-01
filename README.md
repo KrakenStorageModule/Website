@@ -1,4 +1,4 @@
-Johan Kornet's Portfolio (Under Development)
+Johan Kornet's Portfolio
 
 
 [Website Link](https://krakenstoragemodule.github.io/Website/)
