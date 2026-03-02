@@ -6,19 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/K_IMAGE.png" />
 
-  <!-- Put your site title here -->
   <title>
     JK Portfolio
   </title>
 
-
-
-
-
-
   <meta name="Johan Kornet"
     content="Electrical Engineering/Embedded Systems Integration Student. Science-Fiction Enthusiast.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords"
     content="Johan Kornet, Controls Engineering, Controls Systems Engineering, Embedded Systems Engineering, Altium, Ki-CAD, Linux, C++, CPP, C, Python, Java, Javascript" />
   <link rel="stylesheet" href="index.css" />
@@ -46,10 +39,8 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Johan Kornet</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
         <p>Electrical Engineering Student at Texas A&M based in Houston, Texas.</p>
         <a href="#contact" class="btn">Get in touch!</a>
       </div>
@@ -64,8 +55,6 @@
       <div class="row">
         <h2>Experiences</h2>
         <div class="Experiences__boxes">
-
-          <!-- Each div with the Experiences__box class is a project. -->
 
           <div class="Experiences__box">
             <div class="Experiences__text">
@@ -85,7 +74,6 @@
               <div class="Experiences__links">
                 <a href="https://github.com/KrakenStorageModule/Karura_Encoders_2025-26"
                   target="AMT2030 Encoder Software" class="link__text">
-
                   Visit Repo <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/KrakenStorageModule/Karura_Encoders_2025-26" title="View Encoder Repo"
@@ -140,8 +128,7 @@
                   <p>
                     Open-Source advanced trajectory-planning and motion control library for VEX V5RC Robotics. I wrote
                     this in my HS senior year as a way to gain a competitve advantage and force myself to actually learn
-                    how
-                    control systems work.
+                    how control systems work.
                   </p>
                   <ul class="Experiences__list">
                     <li>Library/Framework Development</li>
@@ -162,12 +149,12 @@
                 </div>
                 <div class="Experiences__image-box">
                   <div class="Experiences__image-row">
-
                     <img src="./images/odom.png" class="Experiences__image" alt="1380A Dead-Wheel Odometry Set-Up" />
                     <img src="./images/Screenshot 2026-02-28 181356.png" class="Experiences__image" alt="1380A CAD" />
                   </div>
                 </div>
               </div>
+
               <br><br>
               <div class="Experiences__box">
                 <div class="Experiences__text">
@@ -197,8 +184,7 @@
                       Visit Site <span>&rarr;</span>
                     </a>
                     <a href="https://www.youtube.com/@DaMedicalKraken">
-                      <img src="./images/yt_logo_black.jpg" class="Experiences__code" title="1380A Youtube"
-                        alt="GitHub">
+                      <img src="./images/yt_logo_black.jpg" class="Experiences__code" title="1380A Youtube" alt="YouTube">
                     </a>
                   </div>
                 </div>
@@ -208,6 +194,7 @@
                     <img src="./images/1380A_LB_CAD.png" class="Experiences__image" alt="1380A CAD" />
                   </div>
                 </div>
+
                 <div class="Experiences__box">
                   <div class="Experiences__text">
                     <h3>Website/Portfolio</h3>
@@ -231,17 +218,36 @@
                       </a>
                     </div>
                   </div>
+
                   <div class="Experiences__image-box">
-                    <img src="./images/Screenshot 2026-03-02 160533.png" class="Experiences__image"
-                      alt="Site Analytics" />
-                    <!-- Site Analytics -->
-                    <p>This site has been visited <span id="visit-count"></span> times!</p>
-
-
-
-
+                    <img src="./images/Screenshot 2026-03-02 160533.png" class="Experiences__image" alt="Site Analytics" />
                   </div>
                 </div>
+<div>Number of visitors: <div id="stats"></div></div>
+
+<script>
+    let r = new XMLHttpRequest();
+    r.addEventListener('load', function() {
+        document.querySelector('#stats').innerText = JSON.parse(this.responseText).count
+    })
+
+    // Should be exact (encoded) path as it appears in the UI. This uses
+    // GoatCounter's count.js
+    let path = window.goatcounter.get_data()['p']
+
+    // Or alternatively, do it manually. Will return HTTP status 404 if the
+    // path is not found).
+    //let path = location.pathname
+
+    r.open('GET', 'https://johankornet.goatcounter.com/counter/' + encodeURIComponent(path) + '.json')
+    r.send()
+</script>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ***** Hobbies ***** -->
@@ -280,6 +286,7 @@
         </div>
       </div>
     </section>
+
     <!-- ***** About ***** -->
 
     <section class="about" id="about">
@@ -287,7 +294,6 @@
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
               Howdy! My name is Johan Kornet, and I am a Freshman Electrical Engineering Student at Texas A&M-College
               Station.
@@ -301,7 +307,6 @@
               rel="noopener noreferrer" class="btn">My Resume!</a>
           </div>
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
             <img class="about__photo" src="./images/professional_photo.jpg"
               alt="Professional Photo of Johan looking pretty in front of A&M flags" />
           </div>
@@ -322,7 +327,6 @@
           to say "Howdy" - feel free to reach out! The quickest way to
           reach me is via email. Thanks and Gig 'Em!
         </p>
-        <!-- Replace the email with yours -->
         <a href="mailto:johankornet@tamu.edu" class="btn">johankornet@tamu.edu</a>
       </div>
     </div>
@@ -332,7 +336,6 @@
 
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
           <a href="https://github.com/KrakenStorageModule" title="Link to Github Profile">
@@ -341,8 +344,7 @@
         </li>
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/johan-kornet/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-              alt="Linkedin">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
@@ -350,17 +352,20 @@
       <a href="#top" class="back-to-top" title="Back to Top">
         <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
       </a>
-      <script src="./index.js"></script>
-      <script data-goatcounter="https://johankornet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    </div>
+  </footer>
 
-      <script>
-        var t = setInterval(function () {
-          if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t);
-            window.goatcounter.visit_count({ el: 'visit-count' });
-          }
-        }, 100);
-      </script>
+  <script src="./index.js"></script>
+  <script data-goatcounter="https://johankornet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <!-- <script>
+    var t = setInterval(function () {
+      if (window.goatcounter && window.goatcounter.visit_count) {
+        clearInterval(t);
+        window.goatcounter.visit_count({ el: 'visit-count' });
+      }
+    }, 100); -->
+  </script>
+
 </body>
 
 </html>
