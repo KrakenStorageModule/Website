@@ -237,17 +237,7 @@
                     <!-- Site Analytics -->
                     <p>This site has been visited <span id="visit-count"></span> times!</p>
 
-                    <script data-goatcounter="https://johankornet.goatcounter.com/count" async
-                      src="//gc.zgo.at/count.js"></script>
 
-                    <script>
-                      var t = setInterval(function () {
-                        if (window.goatcounter && window.goatcounter.visit_count) {
-                          clearInterval(t);
-                          window.goatcounter.visit_count({ el: 'visit-count' });
-                        }
-                      }, 100);
-                    </script>
 
 
                   </div>
@@ -361,6 +351,16 @@
         <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
       </a>
       <script src="./index.js"></script>
+      <script data-goatcounter="https://johankornet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+      <script>
+        var t = setInterval(function () {
+          if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t);
+            window.goatcounter.visit_count({ el: 'visit-count' });
+          }
+        }, 100);
+      </script>
 </body>
 
 </html>
