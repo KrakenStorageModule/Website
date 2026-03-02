@@ -11,8 +11,10 @@
     JK Portfolio
   </title>
 
-  <!-- Site Analytics -->
-  <script data-goatcounter="https://johankornet.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+
+
+
 
   <meta name="Johan Kornet"
     content="Electrical Engineering/Embedded Systems Integration Student. Science-Fiction Enthusiast.">
@@ -224,7 +226,7 @@
                       <a href="https://github.com/KrakenStorageModule/Website" class="link__text">
                         Visit Site <span>&rarr;</span>
                       </a>
-                      <a href="hhttps://github.com/KrakenStorageModule/Website">
+                      <a href="https://github.com/KrakenStorageModule/Website">
                         <img src="./images/github.svg" class="Experiences__code" title="View Website Repo" alt="GitHub">
                       </a>
                     </div>
@@ -232,6 +234,22 @@
                   <div class="Experiences__image-box">
                     <img src="./images/Screenshot 2026-03-02 160533.png" class="Experiences__image"
                       alt="Site Analytics" />
+                    <!-- Where you want the count to appear -->
+                    <p>This site has been visited <span id="visit-count"></span> times!</p>
+
+                    <script data-goatcounter="https://johankornet.goatcounter.com/count" async
+                      src="//gc.zgo.at/count.js"></script>
+
+                    <script>
+                      var t = setInterval(function () {
+                        if (window.goatcounter && window.goatcounter.visit_count) {
+                          clearInterval(t);
+                          window.goatcounter.visit_count({ el: 'visit-count' });
+                        }
+                      }, 100);
+                    </script>
+
+
                   </div>
                 </div>
     </section>
