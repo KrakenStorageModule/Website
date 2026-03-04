@@ -25,11 +25,11 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#Experiences" class="nav__link">Experiences</a></li>
-          <li class="nav__item"><a href="#Hobbies" class="nav__link">Hobbies</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
+          <li class="nav__item"><a href="#Experiences" class="nav__link">Experiences</a></li>
+          <li class="nav__item"><a href="#Hobbies" class="nav__link">Hobbies</a></li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -48,6 +48,45 @@
   </header>
 
   <main role="main">
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Howdy! My name is Johan Kornet, and I am a Freshman Electrical Engineering Student at Texas A&M-College
+              Station.
+              I'm also pursuing a minor in Embedded Systems Integration!
+              My main professional interests are controls and embedded systems.
+              I am looking primarily into the robotics and aerospace industries.
+              I am OBSESSED with Sci-Fi, so if you want to chat or just want recommendations, shoot me a message!
+              Feel free to poke around the website a lil more :&#41;, and please feel free to contact me!
+            </p>
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+              <a href="https://drive.google.com/file/d/1aeOzcQHYahGo190b-0Gaknv1ntUW7XlS/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer" class="btn" style="margin-top: 0;">My Resume!</a>
+              <a href="https://github.com/KrakenStorageModule" target="_blank" title="GitHub Profile">
+                <img src="./images/github.svg" alt="GitHub"
+                  style="height: 3rem; transition: transform 0.2s; cursor: pointer;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              </a>
+              <a href="https://www.linkedin.com/in/johan-kornet/" target="_blank" title="LinkedIn Profile">
+                <img src="./images/linkedin.svg" alt="LinkedIn"
+                  style="height: 3rem; transition: transform 0.2s; cursor: pointer;"
+                  onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+              </a>
+            </div>
+          </div>
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/professional_photo.jpg"
+              alt="Professional Photo of Johan looking pretty in front of A&M flags" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ***** Experiences ***** -->
 
@@ -139,11 +178,11 @@
                   </ul>
 
                   <div class="Experiences__links">
-                    <a href="https://github.com/KrakenStorageModule/KrakenLib" target = "_blank" class="link__text">
+                    <a href="https://github.com/KrakenStorageModule/KrakenLib" target="_blank" class="link__text">
                       Visit Site <span>&rarr;</span>
                     </a>
-                    <a href="https://github.com/KrakenStorageModule/KrakenLib", target = "_blank">
-                      <img src="./images/github.svg" class= "Experiences__code" title="View KrakenLib Repo" alt="GitHub">
+                    <a href="https://github.com/KrakenStorageModule/KrakenLib" , target="_blank">
+                      <img src="./images/github.svg" class="Experiences__code" title="View KrakenLib Repo" alt="GitHub">
                     </a>
                   </div>
                 </div>
@@ -180,11 +219,12 @@
                   </ul>
 
                   <div class="Experiences__links">
-                    <a href="https://www.robotevents.com/teams/V5RC/1380A" class="link__text" target = "_blank">
+                    <a href="https://www.robotevents.com/teams/V5RC/1380A" class="link__text" target="_blank">
                       Visit Site <span>&rarr;</span>
                     </a>
-                    <a href="https://www.youtube.com/@DaMedicalKraken", target = "_blank">
-                      <img src="./images/yt_logo_black.jpg" class="Experiences__code" title="1380A Youtube" alt="YouTube">
+                    <a href="https://www.youtube.com/@DaMedicalKraken" , target="_blank">
+                      <img src="./images/yt_logo_black.jpg" class="Experiences__code" title="1380A Youtube"
+                        alt="YouTube">
                     </a>
                   </div>
                 </div>
@@ -194,7 +234,7 @@
                     <img src="./images/1380A_LB_CAD.png" class="Experiences__image" alt="1380A CAD" />
                   </div>
                 </div>
-<br><br>
+                <br><br>
                 <div class="Experiences__box">
                   <div class="Experiences__text">
                     <h3>Website/Portfolio</h3>
@@ -210,10 +250,10 @@
                     </ul>
 
                     <div class="Experiences__links">
-                      <a href="https://github.com/KrakenStorageModule/Website" class="link__text" target = "_blank">
+                      <a href="https://github.com/KrakenStorageModule/Website" class="link__text" target="_blank">
                         Visit Site <span>&rarr;</span>
                       </a>
-                      <a href="https://github.com/KrakenStorageModule/Website" target= "_blank">
+                      <a href="https://github.com/KrakenStorageModule/Website" target="_blank">
                         <img src="./images/github.svg" class="Experiences__code" title="View Website Repo" alt="GitHub">
                       </a>
                     </div>
@@ -221,8 +261,9 @@
 
                   <div class="Experiences__image-box">
                     <a href=""></a>
-                    <img src="./images/Screenshot 2026-03-02 160533.png" class="Experiences__image" alt="Site Analytics" />
-                    <p>Live Traffic:  <span id="visit-count">...</span> Total Visitors </p>
+                    <img src="./images/Screenshot 2026-03-02 160533.png" class="Experiences__image"
+                      alt="Site Analytics" />
+                    <p>Live Traffic: <span id="visit-count">...</span> Total Visitors </p>
                   </div>
                 </div>
 
@@ -270,32 +311,7 @@
       </div>
     </section>
 
-    <!-- ***** About ***** -->
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              Howdy! My name is Johan Kornet, and I am a Freshman Electrical Engineering Student at Texas A&M-College
-              Station.
-              I'm also pursuing a minor in Embedded Systems Integration!
-              My main professional interests are controls and embedded systems.
-              I am looking primarily into the robotics and aerospace industries.
-              I am OBSESSED with Sci-Fi, so if you want to chat or just want recommendations, shoot me a message!
-              Feel free to poke around the website a lil more :&#41;, and please feel free to contact me!
-            </p>
-            <a href="https://drive.google.com/file/d/1aeOzcQHYahGo190b-0Gaknv1ntUW7XlS/view?usp=sharing" target="_blank"
-              rel="noopener noreferrer" class="btn">My Resume!</a>
-          </div>
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/professional_photo.jpg"
-              alt="Professional Photo of Johan looking pretty in front of A&M flags" />
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ***** Contact ***** -->
@@ -327,7 +343,8 @@
         </li>
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/johan-kornet/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+              alt="Linkedin">
           </a>
         </li>
       </ul>
@@ -356,4 +373,5 @@
   </script>
 
 </body>
+
 </html>
