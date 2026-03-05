@@ -425,12 +425,11 @@
     var t = setInterval(function () {
       if (window.goatcounter && window.goatcounter.get_data) {
         clearInterval(t);
-        let path = window.goatcounter.get_data()['p'];
         let r = new XMLHttpRequest();
         r.addEventListener('load', function () {
           document.querySelector('#visit-count').innerText = JSON.parse(this.responseText).count;
         });
-        r.open('GET', r.open('GET', 'https://johankornet.goatcounter.com/counter/TOTAL.json' + encodeURIComponent(path) + '.json'));
+        r.open('GET', 'https://johankornet.goatcounter.com/counter/TOTAL.json');
         r.send();
       }
     }, 100);
