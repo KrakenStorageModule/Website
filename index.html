@@ -382,7 +382,7 @@
         r.addEventListener('load', function () {
           document.querySelector('#visit-count').innerText = JSON.parse(this.responseText).count;
         });
-        r.open('GET', 'https://johankornet.goatcounter.com/counter/' + encodeURIComponent(path) + '.json');
+        r.open('GET', r.open('GET', 'https://johankornet.goatcounter.com/counter/TOTAL.json' + encodeURIComponent(path) + '.json');
         r.send();
       }
     }, 100);
